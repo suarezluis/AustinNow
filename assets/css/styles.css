@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 100% !important;
+  text-align: center;
+  line-height: 16.6vh;
+}
+
+.cell {
+  height: 16.6vh;
+}
+
+.container {
+  background: url(../images/backgrounds/austin1.jpg);
+  background-size: cover;
+}
+
+* {
+  color: aliceblue;
+  text-shadow: 2px 2px 5px black;
+}
