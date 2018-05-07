@@ -1,3 +1,6 @@
+// Function to display time, argument required is a string with handler in CSS
+// format, ie. "#ID", ".Class"
+
 function displayTime(string) {
   var timer = setInterval(function() {
     var time = new Date();
@@ -19,5 +22,45 @@ function displayTime(string) {
     }
     $(string).attr("style", "font-size:16.6vh;");
     $(string).text(hours + ":" + minutes + ":" + seconds + " " + amPm);
+  }, 1000);
+}
+
+// Function to display time, argument required is a string with handler in CSS
+// format, ie. "#ID", ".Class"
+
+function displayDate(string) {
+  var timer = setInterval(function() {
+    var pp = new Date();
+
+    var dayNames = [
+      "Sun",
+      "Mon",
+      "Tues",
+      "Wed",
+      "Thu",
+      "Fri"
+    ];
+    var monthNames = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ];
+
+    var dayWeek = dayNames[pp.getDay()];
+    var dayMonth = pp.getDate();
+    var month = monthNames[pp.getMonth()];
+    var year = pp.getFullYear()
+    
+    $(string).attr("style", "line-height:8.3vh;  font-size:8.3vh;");
+    $(string).html("<br>" + dayWeek + ", " + month + ", " + dayMonth + ", " + year);
   }, 1000);
 }
