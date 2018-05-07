@@ -21,7 +21,7 @@ function displayTime(string) {
       seconds = "0" + seconds;
     }
     $(string).attr("style", "font-size:16.6vh;");
-    $(string).text(hours + ":" + minutes + ":" + seconds + " " + amPm);
+    $(string).html(hours + ":" + minutes + "" +"<span style='font-size:5.5vh'>" + seconds +"</span>"+ "" + amPm);
   }, 1000);
 }
 
