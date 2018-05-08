@@ -7,22 +7,40 @@ body {
   max-width: 100% !important;
   text-align: center;
   line-height: 16.6vh;
+  position: absolute;
 }
 
 .cell {
   height: 16.6vh;
 }
 
-.container {
+/* .container {
   background: url(../images/backgrounds/austin1.jpg);
   background-size: cover;
-}
+} */
 
 * {
   color: aliceblue;
   text-shadow: 2px 2px 5px black;
 }
 
+#section1 {
+  background-image: url(../images/backgrounds/austin1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#section2 {
+  background-image: url(../images/backgrounds/greetingsFromAustin.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#section3 {
+  background-image: url(../images/backgrounds/hope-gallery.jpg);
+  background-size: cover;
+  position: relative;
+}
 .weatherInfo {
   font-size: 5vh;
   line-height: 0;
