@@ -30,58 +30,58 @@ body {
 }
 
 #section1 {
-  background-image: url(../images/backgrounds/austin1.jpg);
+  background-image: url(../images/backgrounds/austin0.jpg);
   background-size: cover;
 }
 
 #section2 {
-  background-image: url(../images/backgrounds/greetingsFromAustin.jpg);
+  background-image: url(../images/backgrounds/austin1.jpg);
   background-size: cover;
 }
 
 #section3 {
-  background-image: url(../images/backgrounds/hope-gallery.jpg);
+  background-image: url(../images/backgrounds/austin2.jpg);
   background-size: cover;
 }
 
 #section4 {
-  background-image: url(../images/backgrounds/butterHalf.jpg);
+  background-image: url(../images/backgrounds/austin3.jpg);
   background-size: cover;
   position: relative;
 }
 
 #section5 {
-  background-image: url(../images/backgrounds/Austin-State-Capitol.jpg);
+  background-image: url(../images/backgrounds/austin4.jpg);
   background-size: cover;
   position: relative;
 }
 
 #section6 {
-  background-image: url(../images/backgrounds/hamilton.jpg);
+  background-image: url(../images/backgrounds/austin5.jpg);
   background-size: cover;
   position: relative;
 }
 
 #section7 {
-  background-image: url(../images/backgrounds/ut.jpg);
+  background-image: url(../images/backgrounds/austin6.jpg);
   background-size: cover;
   position: relative;
 }
 
 #section8 {
-  background-image: url(../images/backgrounds/austin-city-limits-2016-glory.jpg);
+  background-image: url(../images/backgrounds/austin7.jpg);
   background-size: cover;
   position: relative;
 }
 
 #section9 {
-  background-image: url(../images/backgrounds/statium.jpg);
+  background-image: url(../images/backgrounds/austin8.jpg);
   background-size: cover;
   position: relative;
 }
 
 #section10 {
-  background-image: url(../images/backgrounds/bats.jpeg);
+  background-image: url(../images/backgrounds/austin9.jpg);
   background-size: cover;
   position: relative;
 }
