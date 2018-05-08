@@ -7,10 +7,9 @@ body {
   max-width: 100% !important;
   text-align: center;
   line-height: 16.6vh;
-  
 }
 
-.mainInfo{
+.mainInfo {
   position: absolute;
   position: fixed !important;
   top: 0;
@@ -33,20 +32,60 @@ body {
 #section1 {
   background-image: url(../images/backgrounds/austin1.jpg);
   background-size: cover;
-  
 }
 
 #section2 {
   background-image: url(../images/backgrounds/greetingsFromAustin.jpg);
   background-size: cover;
-  
 }
 
 #section3 {
   background-image: url(../images/backgrounds/hope-gallery.jpg);
   background-size: cover;
-  
 }
+
+#section4 {
+  background-image: url(../images/backgrounds/butterHalf.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#section5 {
+  background-image: url(../images/backgrounds/Austin-State-Capitol.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#section6 {
+  background-image: url(../images/backgrounds/hamilton.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#section7 {
+  background-image: url(../images/backgrounds/ut.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#section8 {
+  background-image: url(../images/backgrounds/austin-city-limits-2016-glory.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#section9 {
+  background-image: url(../images/backgrounds/tl-horizontal_main.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#section10 {
+  background-image: url(../images/backgrounds/bats.jpeg);
+  background-size: cover;
+  position: relative;
+}
+
 .weatherInfo {
   font-size: 5vh;
   line-height: 0;
