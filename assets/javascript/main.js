@@ -1,0 +1,2 @@
+displayDate("#CC")
+displayTime("#DC");
