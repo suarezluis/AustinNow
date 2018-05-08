@@ -7,7 +7,13 @@ body {
   max-width: 100% !important;
   text-align: center;
   line-height: 16.6vh;
+  
+}
+
+.mainInfo{
   position: absolute;
+  position: fixed !important;
+  top: 0;
 }
 
 .cell {
@@ -27,19 +33,19 @@ body {
 #section1 {
   background-image: url(../images/backgrounds/austin1.jpg);
   background-size: cover;
-  position: relative;
+  
 }
 
 #section2 {
   background-image: url(../images/backgrounds/greetingsFromAustin.jpg);
   background-size: cover;
-  position: relative;
+  
 }
 
 #section3 {
   background-image: url(../images/backgrounds/hope-gallery.jpg);
   background-size: cover;
-  position: relative;
+  
 }
 .weatherInfo {
   font-size: 5vh;
