@@ -1,2 +1,2 @@
-displayDate("#CC")
+displayDate("#CC");
 displayTime("#DC");

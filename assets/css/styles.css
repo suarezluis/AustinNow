@@ -22,3 +22,8 @@ body {
   color: aliceblue;
   text-shadow: 2px 2px 5px black;
 }
+
+.weatherInfo {
+  font-size: 5vh;
+  line-height: 0;
+}
