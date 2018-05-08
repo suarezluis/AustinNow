@@ -21,7 +21,17 @@ function displayTime(string) {
       seconds = "0" + seconds;
     }
     $(string).attr("style", "font-size:16.6vh;");
-    $(string).html(hours + ":" + minutes + "" +"<span style='font-size:5.5vh'>" + seconds +"</span>"+ "" + amPm);
+    $(string).html(
+      hours +
+        ":" +
+        minutes +
+        "" +
+        "<span style='font-size:5.5vh'>" +
+        seconds +
+        "</span>" +
+        "" +
+        amPm
+    );
   }, 1000);
 }
 
@@ -32,14 +42,7 @@ function displayDate(string) {
   var timer = setInterval(function() {
     var pp = new Date();
 
-    var dayNames = [
-      "Sun",
-      "Mon",
-      "Tues",
-      "Wed",
-      "Thu",
-      "Fri"
-    ];
+    var dayNames = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri"];
     var monthNames = [
       "Jan",
       "Feb",
@@ -58,9 +61,11 @@ function displayDate(string) {
     var dayWeek = dayNames[pp.getDay()];
     var dayMonth = pp.getDate();
     var month = monthNames[pp.getMonth()];
-    var year = pp.getFullYear()
-    
+    var year = pp.getFullYear();
+
     $(string).attr("style", "line-height:8.3vh;  font-size:8.3vh;");
-    $(string).html("<br>" + dayWeek + ", " + month + ", " + dayMonth + ", " + year);
+    $(string).html(
+      "<br>" + dayWeek + ", " + month + ", " + dayMonth + ", " + year
+    );
   }, 1000);
 }
