@@ -41,6 +41,19 @@ body {
   background-size: cover;
   position: relative;
 }
+
+#section4 {
+  background-image: url(../images/backgrounds/butterHalf.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#section5 {
+  background-image: url(../images/backgrounds/Austin-State-Capitol.jpg);
+  background-size: cover;
+  position: relative;
+}
+
 .weatherInfo {
   font-size: 5vh;
   line-height: 0;
