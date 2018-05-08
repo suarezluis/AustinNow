@@ -14,9 +14,9 @@ $.ajax({
   // We store all of the retrieved data inside of an object called "response"
   .then(function(response) {
     weatherAPI = response;
-
+    console.log(queryURL);
     $("#AE").html(
-      "<div class='weatherInfo'><img  src='http://openweathermap.org/img/w/" +
+      "<div class='weatherInfo'><img  src='https://openweathermap.org/img/w/" +
         weatherAPI.weather[0].icon +
         ".png" +
         "'" +
