@@ -69,3 +69,7 @@ function displayDate(string) {
     );
   }, 1000);
 }
+
+function populateIcon(iconName,grid){
+  $(grid).html( iconName )
+}
