@@ -20,7 +20,7 @@ $.ajax({
         weatherAPI.weather[0].icon +
         ".svg" +
         "'" +
-        "alt=''><br><span>" +
+        "alt=''><br><br><span class='temperature'>" +
         Math.round(weatherAPI.main.temp) +
         "°F" +
         "</span></div>"
