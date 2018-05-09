@@ -27,3 +27,6 @@ $(".about").on("click",function(){
     setTimeout(function(){$("#widget").css("height","90vh")},600)
     
 })
+
+//Ebay affiliate link
+//https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338307235&mpre=https%3A%2F%2Fwww.ebay.com%2F
