@@ -26,3 +26,45 @@ $.ajax({
         "</span></div>"
     );
   });
+
+var newsAPI;
+
+var newsAPIKey = "b0d34a658ba640128f563b584c31ac9a";
+
+var queryURL =
+  "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + newsAPIKey;
+
+$.ajax({
+  url: queryURL,
+  method: "GET"
+}).then(function(response) {
+  newsAPI = response;
+
+  var i = 0;
+  $("#FC").html(
+    "<p>" +
+      "<a href='" +
+      newsAPI.articles[i].url +
+      "' id='newsArticles'>" +
+      newsAPI.articles[i].title +
+      "</a>" +
+      "</p>"
+  );
+
+  setInterval(function() {
+    i++;
+    if (i === newsAPI.articles.length) {
+      i = 0;
+    }
+    $("#FC").html(
+      "<p>" +
+        "<a href='" +
+        newsAPI.articles[i].url +
+        "' id='newsArticles'>" +
+        newsAPI.articles[i].title +
+        "</a>" +
+        "</p>"
+    );
+    console.log(newsAPI.articles[i].title);
+  }, 5000);
+});
