@@ -77,5 +77,13 @@ function populateIcon(iconName, grid) {
 }
 
 function widget(content) {
-  $(".widgetContent").html(content);
+  $(document).off();
+  $(".widgetContent").html(
+    content
+  );
+  $("#CC").css({ transition: "all 1s", opacity: "0" });
+  $("#DC").css({ transition: "all 1s", opacity: "0" });
+  setTimeout(function() {
+    $("#widget").css("height", "90vh");
+  }, 600);
 }

@@ -1,3 +1,4 @@
+function shortcutOn(){
 $(document).keyup(function(event) {
   console.log(event.which);
   if (event.which === 89) {
@@ -49,3 +50,4 @@ $(document).keyup(function(event) {
     console.log("LinkedIn");
   }
 });
+}
