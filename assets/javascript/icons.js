@@ -3,4 +3,6 @@ var gMapsIcon = '<img class="icon gMaps" src="assets/images/icons/gMapsIcon.svg"
 var googleIcon = '<img class="icon google" src="assets/images/icons/googleIcon.svg" alt="">';
 var moviesIcon = '<img class="icon movies" src="assets/images/icons/moviesIcon.svg" alt="">';
 var searchIcon = '<img class="icon search" src="assets/images/icons/searchIcon.svg" alt="">';
-var trafficIcon = '<img class="icon search" src="assets/images/icons/trafficIcon.png" alt="">';
+var trafficIcon = '<img class="icon traffic" src="assets/images/icons/trafficIcon.png" alt="">';
+var aboutIcon = '<img class="icon about" src="assets/images/icons/aboutIcon.png" alt="">';
+var amazonIcon = '<img class="icon amazon" src="assets/images/icons/amazonIcon.png" alt="">';

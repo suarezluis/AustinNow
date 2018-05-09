@@ -13,7 +13,7 @@ $(document).keyup(function(event) {
     console.log("Reddit");
   }
   if (event.which === 65) {
-    window.location = href = "https://www.amazon.com";
+    window.location = href = "https://amzn.to/2rvgZOq";
     console.log("Amazon");
   }
   if (event.which === 70) {
