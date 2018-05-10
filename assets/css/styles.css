@@ -164,3 +164,16 @@ body {
   border-bottom: 1px solid aliceblue;
   padding-bottom: 5px;
 }
+
+.weatherWidget{
+  text-align: center;
+}
+
+table{
+  font-size: 30px;
+  margin: auto;
+}
+td{
+  padding: 10px;
+  text-align: center;
+}
