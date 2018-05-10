@@ -91,6 +91,7 @@ $(".closeMe").on("click", function() {
 // Event listener for Search
 $(".search").on("click", function() {
   widget(googleSearch);
+  document.getElementById("googleInput").focus();
   // listen for click on google form
   $("#googleButton").on("click", function(e) {
     e.preventDefault();
@@ -122,6 +123,7 @@ $(".search").on("click", function() {
 // Event listener for mapsSearch
 $(".gMaps").on("click", function() {
   widget(gMaps);
+  document.getElementById("googleInput").focus();
   $("#googleButton").on("click", function(e) {
     e.preventDefault();
     var query =
@@ -224,3 +226,12 @@ setTimeout(function() {
   totalLoads++;
   austinNowRef.child("Loads").update({ total: totalLoads });
 }, 5000);
+
+
+function readSearches(){
+ var result;
+    austinNowRef.child("Searches").once("value", function(snap) {
+        result = snap.val()
+    })
+return result
+}
