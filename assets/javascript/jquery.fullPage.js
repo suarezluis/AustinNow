@@ -136,8 +136,8 @@
         fitToSectionDelay: 1000,
         easing: "easeInOutCubic",
         easingcss3: "ease",
-        loopBottom: false,
-        loopTop: false,
+        loopBottom: true,
+        loopTop: true,
         loopHorizontal: true,
         continuousVertical: false,
         continuousHorizontal: false,
@@ -3305,6 +3305,19 @@
   }; //end of $.fn.fullpage
 });
 
+// $(document).ready(function() {
+//   $("#fullpage").fullpage();
+// });
+
+// Fullpage auto transition
 $(document).ready(function() {
-  $("#fullpage").fullpage();
+  $("#fullpage").fullpage({
+    sectionsColor: ["#1bbc9b", "#4BBFC3"],
+    loopBottom: true,
+    afterRender: function() {
+      setInterval(function() {
+        $.fn.fullpage.moveSectionDown();
+      }, 30000);
+    }
+  });
 });
