@@ -1,4 +1,5 @@
 var weatherAPI;
+var movieAPI;
 var weatherIcon
 var weatherDescription;
 var temp;
@@ -41,10 +42,10 @@ $.ajax({
     sunset = new Date(weatherAPI.sys.sunset * 1000).toLocaleTimeString();
 
     $("#AE").html(
-      "<div class='weatherInfo'>"+weatherIcon+"<br><br><span class='temperature'>" +
+      "<div class='weatherInfo'>"+weatherIcon+"<p class='temperature'>" +
         Math.round(temp) +
         "°F" +
-        "</span></div>"
+        "</p></div>"
     );
   });
 
@@ -88,4 +89,14 @@ $.ajax({
     );
     //console.log(newsAPI.articles[i].title);
   }, 5000);
+});
+
+//// movies
+var movieQueryURL = "https://api.themoviedb.org/3/movie/now_playing?api_key=ef73b07d7e7668c1b934d3be4be1864f&language=en-US&page=1"
+$.ajax({
+  url: movieQueryURL,
+  method: "GET"
+}).then(function(response) {
+  
+  movieAPI = response;
 });

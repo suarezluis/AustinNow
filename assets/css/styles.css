@@ -1,33 +1,4 @@
-body {
-  padding: 0;
-  margin: 0;
-}
 
-.container {
-  max-width: 100% !important;
-  text-align: center;
-  line-height: 16.6vh;
-}
-
-.mainInfo {
-  position: absolute;
-  position: fixed !important;
-  top: 0;
-}
-
-.cell {
-  height: 16.6vh;
-}
-
-/* .container {
-  background: url(../images/backgrounds/austin1.jpg);
-  background-size: cover;
-} */
-
-* {
-  color: aliceblue;
-  text-shadow: 3px 3px 4px black;
-}
 
 #section1 {
   background-image: url(../images/backgrounds/austin0.jpg);
@@ -86,13 +57,34 @@ body {
   position: relative;
 }
 
-.weatherInfo {
-  font-size: 200%;
-  line-height: 0;
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 100% !important;
+  text-align: center;
+  line-height: 16.6vh;
+}
+
+.mainInfo {
+  position: absolute;
+  position: fixed !important;
+  top: 0;
+}
+
+.cell {
+  height: 16.6vh;
+}
+
+* {
+  color: aliceblue;
+  text-shadow: 3px 3px 4px black;
 }
 
 .icon {
-  width: 40%;
+  width: 40px;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 5px;
   border-radius: 10px;
@@ -110,13 +102,28 @@ body {
   text-decoration: none;
 }
 
+.weatherInfo {
+  margin-top: 10px;
+  line-height: 8.33vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transition: all 0.5s;
+  
+}
+.weatherInfo:hover {
+  box-shadow: -1px 0 20px, 0 1px 20px, 1px 0 20px, 0 -1px 20px;
+  cursor: pointer;
+}
 .weatherIcon {
-  width: 50%;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  width: 70%;
+  
+  
+ 
 }
 .temperature {
-  font-size: 100%;
+  margin-top: -20px;
+  font-size: 2vw;
+  
 }
 #widget {
   position: sticky;
@@ -135,7 +142,7 @@ body {
 }
 
 .closeMe {
-  margin-left: 95%;
+  margin: 48%;
   font-size: 30px;
 }
 
@@ -149,15 +156,15 @@ body {
   max-width: 100%;
 }
 
-#googleInput, #googleButton{
-  all:unset;
+#googleInput,
+#googleButton {
+  all: unset;
   width: 80%;
   text-align: center;
   margin: 0 10%;
 }
 
-#googleInput{
-  
+#googleInput {
   margin-top: 30%;
   font-size: 30px;
   text-shadow: none;
@@ -165,15 +172,107 @@ body {
   padding-bottom: 5px;
 }
 
-.weatherWidget{
+.weatherWidget {
   text-align: center;
 }
 
-table{
+table {
   font-size: 30px;
   margin: auto;
+  
 }
-td{
+
+
+td {
   padding: 10px;
   text-align: center;
+}
+
+.lava {
+  text-align: center;
+}
+
+#map {
+  height: 65vh;
+  width: 90%;
+  margin: auto;
+}
+
+.right {
+  text-align: right;
+  margin-right: 5%;
+}
+
+.movieTable {
+  width: 90%;
+  height: 65vh;
+}
+
+.movieTitle {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  
+  .icon{
+    margin: 0;
+    text-align: unset;
+  }
+  
+  #AB,
+  #BB,
+  #CB,
+  #DB,
+  #EB,
+  #FB,
+  #AD,
+  #BD,
+  #CD,
+  #DD,
+  #ED,
+  #FD {
+    display: none;
+  }
+  #AA,
+  #BA,
+  #CA,
+  #DA,
+  #EA,
+  #FA,
+  #AE,
+  #BE,
+  #CE,
+  #DE,
+  #EE,
+  #FE {
+    
+    width: 12%;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  #AC, #BC, #CC, #DC, #EC, #FC{
+    width: 76%;
+  }
+
+  .temperature {
+    
+    font-size: 4vw;
+}
+
+
+.movieTable{
+  height: 150px;
+}
+
+.movieTable p{
+  font-size: 10px;
+  
+}
+
+.movieTable img{
+  width: 100%
+}
+
 }

@@ -198,7 +198,7 @@ $(".spotify").on("click", function() {
 });
 //Event Listener for Traffic
 $(".traffic").on("click", function() {
-  widget(about);
+  widget(traffic);
   uptadeClick("traffic");
 });
 //Event Listener for Eventbrite
@@ -208,7 +208,11 @@ $(".eventbrite").on("click", function() {
 });
 //Event Listener for Movies
 $(".movies").on("click", function() {
-  widget(about);
+  widget(movies);
+  for (i = 0; i < 6; i++) {
+    $(".movie" + (i+1)).append("<img src='https://image.tmdb.org/t/p/w185_and_h278_bestv2/"+movieAPI.results[i].poster_path+"'>");
+    $(".movie" + (i+1)).append("<br><p class='movieTitle'>" + movieAPI.results[i].title + "</p>");
+  }
   uptadeClick("movies");
 });
 
