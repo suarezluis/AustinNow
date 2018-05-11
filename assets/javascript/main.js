@@ -210,8 +210,14 @@ $(".eventbrite").on("click", function() {
 $(".movies").on("click", function() {
   widget(movies);
   for (i = 0; i < 6; i++) {
-    $(".movie" + (i+1)).append("<img src='https://image.tmdb.org/t/p/w185_and_h278_bestv2/"+movieAPI.results[i].poster_path+"'>");
-    $(".movie" + (i+1)).append("<br><p class='movieTitle'>" + movieAPI.results[i].title + "</p>");
+    $(".movie" + (i + 1)).append(
+      "<img src='https://image.tmdb.org/t/p/w185_and_h278_bestv2/" +
+        movieAPI.results[i].poster_path +
+        "'>"
+    );
+    $(".movie" + (i + 1)).append(
+      "<br><p class='movieTitle'>" + movieAPI.results[i].title + "</p>"
+    );
   }
   uptadeClick("movies");
 });
@@ -231,11 +237,10 @@ setTimeout(function() {
   austinNowRef.child("Loads").update({ total: totalLoads });
 }, 5000);
 
-
-function readSearches(){
- var result;
-    austinNowRef.child("Searches").once("value", function(snap) {
-        result = snap.val()
-    })
-return result
+function readSearches() {
+  var result;
+  austinNowRef.child("Searches").once("value", function(snap) {
+    result = snap.val();
+  });
+  return result;
 }

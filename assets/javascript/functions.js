@@ -22,15 +22,17 @@ function displayTime(string) {
       seconds = "0" + seconds;
     }
 
-    $(string).html("<span class='time'>" +
-      hours +
+    $(string).html(
+      "<span class='time'>" +
+        hours +
         ":" +
         minutes +
         "</span><span class='seconds'>" +
         seconds +
         "</span><span class='amPm'>" +
         "" +
-        amPm +"</span>"
+        amPm +
+        "</span>"
     );
   }, 1000);
 }
@@ -65,7 +67,15 @@ function displayDate(string) {
     var year = pp.getFullYear();
 
     $(string).html(
-      "<span class='date'>" + dayWeek + ", " + month + ", " + dayMonth + ", " + year + "</span>"
+      "<span class='date'>" +
+        dayWeek +
+        ", " +
+        month +
+        ", " +
+        dayMonth +
+        ", " +
+        year +
+        "</span>"
     );
   }, 1000);
 }
@@ -78,9 +88,7 @@ function populateIcon(iconName, grid) {
 
 function widget(content) {
   $(document).off();
-  $(".widgetContent").html(
-    content
-  );
+  $(".widgetContent").html(content);
   $("#CC").css({ transition: "all 1s", opacity: "0" });
   $("#DC").css({ transition: "all 1s", opacity: "0" });
   setTimeout(function() {

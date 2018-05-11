@@ -1,6 +1,6 @@
 var weatherAPI;
 var movieAPI;
-var weatherIcon
+var weatherIcon;
 var weatherDescription;
 var temp;
 var humidity;
@@ -12,7 +12,6 @@ var maxTemp;
 var minTemp;
 var sunrise;
 var sunset;
-
 
 var weatherAPIKey = "bbcffd22c05dae8cf9f7512e606b6653";
 // Here we are building the URL we need to query the database
@@ -28,11 +27,17 @@ $.ajax({
   // We store all of the retrieved data inside of an object called "response"
   .then(function(response) {
     weatherAPI = response;
-    weatherIcon = "<img class='weatherIcon' src='assets/images/weather/" + weatherAPI.weather[0].icon + ".svg'" + " alt=''>"
-    weatherDescription = weatherAPI.weather[0].description.charAt(0).toUpperCase() + weatherAPI.weather[0].description.substr(1); 
+    weatherIcon =
+      "<img class='weatherIcon' src='assets/images/weather/" +
+      weatherAPI.weather[0].icon +
+      ".svg'" +
+      " alt=''>";
+    weatherDescription =
+      weatherAPI.weather[0].description.charAt(0).toUpperCase() +
+      weatherAPI.weather[0].description.substr(1);
     temp = weatherAPI.main.temp;
     humidity = weatherAPI.main.humidity;
-    pressure= weatherAPI.main.pressure;
+    pressure = weatherAPI.main.pressure;
     windSpeed = weatherAPI.wind.speed;
     windDirection = weatherAPI.wind.deg;
     visibility = weatherAPI.visibility;
@@ -42,7 +47,9 @@ $.ajax({
     sunset = new Date(weatherAPI.sys.sunset * 1000).toLocaleTimeString();
 
     $("#AE").html(
-      "<div class='weatherInfo'>"+weatherIcon+"<p class='temperature'>" +
+      "<div class='weatherInfo'>" +
+        weatherIcon +
+        "<p class='temperature'>" +
         Math.round(temp) +
         "°F" +
         "</p></div>"
@@ -92,11 +99,11 @@ $.ajax({
 });
 
 //// movies
-var movieQueryURL = "https://api.themoviedb.org/3/movie/now_playing?api_key=ef73b07d7e7668c1b934d3be4be1864f&language=en-US&page=1"
+var movieQueryURL =
+  "https://api.themoviedb.org/3/movie/now_playing?api_key=ef73b07d7e7668c1b934d3be4be1864f&language=en-US&page=1";
 $.ajax({
   url: movieQueryURL,
   method: "GET"
 }).then(function(response) {
-  
   movieAPI = response;
 });
