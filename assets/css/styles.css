@@ -269,4 +269,10 @@ td {
   .movieTable img {
     width: 100%;
   }
+
+  .weatherWidget td{
+    font-size: 15px;
+  }
+
+
 }
