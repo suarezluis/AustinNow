@@ -208,7 +208,9 @@ td {
     margin: 0;
     text-align: unset;
   }
-
+  .cell {
+    height: 16vh;
+  }
   #AB,
   #BB,
   #CB,
