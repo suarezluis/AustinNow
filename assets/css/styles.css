@@ -81,6 +81,18 @@ body {
   text-shadow: 3px 3px 4px black;
 }
 
+.date{
+  font-size:4.5vw; 
+}
+
+.time, .amPm{
+  font-size:10vw; 
+}
+.seconds{
+  font-size:3vw ;
+}
+
+
 .icon {
   width: 40px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -250,7 +262,17 @@ td {
   #FC {
     width: 76%;
   }
+  .date{
+    font-size:10vw; 
+  }
+  
+  .time, .amPm{
+    font-size:18vw; 
+  }
+ .seconds{
+  font-size:6vw; 
 
+ }
   .widgetContent{
     overflow: auto;
   }

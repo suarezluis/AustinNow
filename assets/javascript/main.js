@@ -102,7 +102,7 @@ $(".search").on("click", function() {
       //if search doesnt exist, create it
       if (snap.hasChild($("#googleInput").val()) == false) {
         // Set search in database
-        austinNowRef.child("Searches/" + $("#googleInput").val()).set(0);
+        austinNowRef.child("Searches/" + $("#googleInput").val()).set(1);
       }
       //if search exist update number
       else {

@@ -22,15 +22,15 @@ function displayTime(string) {
       seconds = "0" + seconds;
     }
 
-    $(string).html(
+    $(string).html("<span class='time'>" +
       hours +
         ":" +
         minutes +
-        "<span style='font-size:5.5vh'>" +
+        "</span><span class='seconds'>" +
         seconds +
-        "</span>" +
+        "</span><span class='amPm'>" +
         "" +
-        amPm
+        amPm +"</span>"
     );
   }, 1000);
 }
@@ -65,7 +65,7 @@ function displayDate(string) {
     var year = pp.getFullYear();
 
     $(string).html(
-      "<br>" + dayWeek + ", " + month + ", " + dayMonth + ", " + year
+      "<span class='date'>" + dayWeek + ", " + month + ", " + dayMonth + ", " + year + "</span>"
     );
   }, 1000);
 }
