@@ -161,6 +161,10 @@ body {
   max-width: 100%;
 }
 
+.about{
+  text-align: justify ;
+}
+
 #googleInput,
 #googleButton {
   all: unset;
