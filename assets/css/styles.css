@@ -136,7 +136,7 @@ body {
   max-width: 100%;
   height: 5px;
   z-index: 999;
-  overflow: hidden;
+  overflow: auto;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -219,6 +219,16 @@ td {
   font-size: 20px;
 }
 
+img{
+  max-width: 90%;
+  max-height: 28vh;
+}
+
+.eventBrite{
+  overflow: auto;
+  width: 90%;
+  margin: auto;
+}
 @media only screen and (max-width: 991px) {
   .icon {
     margin: 0;

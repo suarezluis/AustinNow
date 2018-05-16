@@ -203,13 +203,21 @@ $(".traffic").on("click", function() {
 });
 //Event Listener for Eventbrite
 $(".eventbrite").on("click", function() {
-  widget(about);
+  widget(eventBrite);
+  for (i = 0; i < eventBriteAPI.events.length; i++) {
+    $(".eventBrite").append(
+      '<a href="'+ eventBriteAPI.events[i].resource_uri +'"><h4>'+eventBriteAPI.events[i].name.text+'</h4></a>' + eventBriteAPI.events[i].description.html
+    );
+    $(".eventBrite").append(
+      "<div class='right'>Provided by <a href='"+"https://www.eventbrite.com/d/tx--austin/events/"+"'>Eventbrite</a></div>"
+    )
+  }
   uptadeClick("eventbrite");
 });
 //Event Listener for Movies
 $(".movies").on("click", function() {
   widget(movies);
-  for (i = 0; i < 6; i++) {
+  for (i = 0; i < 9; i++) {
     $(".movie" + (i + 1)).append(
       "<img src='https://image.tmdb.org/t/p/w185_and_h278_bestv2/" +
         movieAPI.results[i].poster_path +

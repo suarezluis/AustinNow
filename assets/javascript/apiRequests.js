@@ -107,3 +107,11 @@ $.ajax({
 }).then(function(response) {
   movieAPI = response;
 });
+
+var eventBriteURL = "https://www.eventbriteapi.com/v3/events/search/?token=MLSAIGMDJVNGA6E2MVHX&location.address=austin%20tx"
+$.ajax({
+  url: eventBriteURL,
+  method: "GET"
+}).then(function(response) {
+  eventBriteAPI = response;
+});
