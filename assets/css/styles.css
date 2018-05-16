@@ -201,7 +201,7 @@ td {
 
 #map {
   height: 65vh;
-  width: 90%;
+  width: 65vh;
   margin: auto;
 }
 
@@ -219,7 +219,7 @@ td {
   font-size: 20px;
 }
 
-img{
+.poster{
   max-width: 90%;
   max-height: 28vh;
 }

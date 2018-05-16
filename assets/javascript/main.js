@@ -219,7 +219,7 @@ $(".movies").on("click", function() {
   widget(movies);
   for (i = 0; i < 9; i++) {
     $(".movie" + (i + 1)).append(
-      "<img src='https://image.tmdb.org/t/p/w185_and_h278_bestv2/" +
+      "<img class='poster' src='https://image.tmdb.org/t/p/w185_and_h278_bestv2/" +
         movieAPI.results[i].poster_path +
         "'>"
     );
