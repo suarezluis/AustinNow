@@ -56,7 +56,9 @@ $.ajax({
     );
   });
 
-var newsAPI;
+
+//// news
+  var newsAPI;
 
 var newsAPIKey = "b0d34a658ba640128f563b584c31ac9a";
 
@@ -86,13 +88,13 @@ $.ajax({
       i = 0;
     }
     $("#FC").html(
-      "<p>" +
+      
         "<a href='" +
         newsAPI.articles[i].url +
-        "' id='newsArticles'>" +
+        "' id='newsArticles'><p class='newsArticles'>" +
         newsAPI.articles[i].title +
-        "</a>" +
-        "</p>"
+        "</p></a>" 
+      
     );
     //console.log(newsAPI.articles[i].title);
   }, 5000);
@@ -108,6 +110,7 @@ $.ajax({
   movieAPI = response;
 });
 
+//// eventbrite
 var eventBriteURL = "https://www.eventbriteapi.com/v3/events/search/?token=MLSAIGMDJVNGA6E2MVHX&location.address=austin%20tx"
 $.ajax({
   url: eventBriteURL,
